@@ -20,17 +20,4 @@ class Qstme {
 		}
 	}
 }
-
-$Q = new Qstme();
-$result = $Q->getUrl("http://google.com/");
-if(true == $Q->error) {
-	echo "Error: ";
-}
-echo $result;
-echo "<hr />";
-$result = Qstme::getUrl("google.com/");
-if(true == Qstme::$error) {
-	echo "Error: ";
-}
-echo $result;
 ?>
